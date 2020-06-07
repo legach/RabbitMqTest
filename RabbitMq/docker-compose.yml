@@ -1,0 +1,17 @@
+version: '3.6'
+services:
+  rabbitmqservice:
+    image: 'rabbitmq:3.6-management-alpine'
+    ports:
+      - '4369:4369'
+      - '5672:5672'
+      - '25672:25672'
+      - '15672:15672'
+    volumes:
+      - './data/mnesia:/var/lib/rabbitmq/mnesia'
+      - './data/logs:/var/log/rabbitmq'
+    environment:
+      #RABBITMQ_USE_LONGNAME: "true"
+      RABBITMQ_LOGS: "/var/log/rabbitmq/rabbit.log"
+      RABBITMQ_DEFAULT_USER: "my_guest"
+      RABBITMQ_DEFAULT_PASS: "my_pass"
