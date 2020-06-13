@@ -1,1 +1,11 @@
 RabbitMq/data/
+Clients/EventBus/.vs/EventBus/config/applicationhost.config
+Clients/EventBus/.vs/
+Clients/EventBus/Common/bin/
+Clients/EventBus/Common/obj/
+Clients/EventBus/ConsumerService/bin/
+Clients/EventBus/ConsumerService/obj/
+Clients/EventBus/EventBus/bin/
+Clients/EventBus/EventBus/obj/
+Clients/EventBus/ProducerService/bin/
+Clients/EventBus/ProducerService/obj/
